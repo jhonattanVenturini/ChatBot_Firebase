@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
+/* Estilos minimalistas para o componente App */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #333333;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos específicos para o header */
+header.app {
+  width: 100%;
+  max-width: 800px;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo para o título dentro do header */
+header.app h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333333;
+  font-weight: 600;
+  text-align: center;
+  background-color: red;
+}
+
+/* Ajustes de hover para o header */
+header.app:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }

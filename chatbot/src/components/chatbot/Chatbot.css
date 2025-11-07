@@ -1,0 +1,103 @@
+/* Estilização simples e funcional para o chatbot */
+
+:root {
+  --bg: #f9f9f9;
+  --panel: #ffffff;
+  --primary: #007bff;
+  --text: #333333;
+  --muted: #888888;
+  --radius: 8px;
+  --font: 'Arial', sans-serif;
+}
+
+/* Container principal */
+.chatbot-container {
+  width: 100%;
+  max-width: 400px;
+  font-family: var(--font);
+  color: var(--text);
+  background: black;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Janela de mensagens */
+.chat-window {
+  flex: 1;
+  padding: 16px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+/* Bolhas de mensagem */
+.message {
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background: #e9ecef;
+  color: var(--text);
+}
+
+/* Formulário de entrada */
+.chat-input-form {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #dddddd;
+  background: var(--panel);
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+}
+
+.send-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Botão de limpar o chat */
+.clear-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius);
+  background: #ff4d4d;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-button:hover {
+  background: #e60000;
+}
